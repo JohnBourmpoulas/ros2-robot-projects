@@ -1,82 +1,43 @@
 ROS 2 Robot Projects
 
-A collection of robotics projects focused on robot modeling, simulation, and software development using ROS 2.
+Welcome to my open-source robotics repository.
 
-This repository documents my practical experience with robotics technologies, starting with basic robot descriptions and gradually progressing toward more complex robotic systems.
+This repository documents my journey into robotics engineering and robot software development through hands-on learning, experimentation, and practical implementation.
 
-The long-term objective is to develop the skills required to design, simulate, program, and build robotic systems.
+My goal is to gradually develop the knowledge and skills required to understand, design, program, and build robotic systems.
 
-Overview
+About
 
-Each project is organized in a separate directory and includes its source files, documentation, and relevant visualization results.
+I believe that one of the most effective ways to learn robotics is through practical experience.
 
-Current and planned topics include:
+This repository is a space where I can explore new concepts, experiment with different approaches, and apply what I learn to real projects.
 
-* Robot modeling using URDF
-* Coordinate frames and transformations using TF2
-* Robot visualization with RViz2
-* Physics-based simulation with Gazebo
-* Robot control and ROS 2 development
-* Mechanical design and CAD integration
+The focus is on continuous improvement, starting with fundamental concepts and gradually working toward more advanced challenges.
 
-Technologies
+Repository Organization
 
-Technology	Purpose
-ROS 2 Jazzy	Robotics middleware and software development
-URDF	Robot structure and kinematic descriptions
-RViz2	Robot visualization and debugging
-TF2	Coordinate transformations
-Gazebo	Physics-based robot simulation
-Python / C++	ROS 2 application development
-FreeCAD	Mechanical design and 3D modeling
+The repository is organized into individual project directories.
 
-Some technologies listed above are planned for future projects.
+Each directory contains its own documentation, source files, and any additional resources relevant to that project.
 
-Projects
+For technical details, implementation notes, and instructions, please refer to the README file inside each project directory.
 
-Project	Description	Status
-01 - First URDF Robot	Basic two-wheeled robot model described in URDF and visualized in RViz2 using ROS 2 Jazzy	In Progress
+Learning and Development
 
-Additional projects will be added as development progresses.
+My learning approach focuses on:
 
-Repository Structure
+* Building a strong understanding of robotics fundamentals.
+* Developing practical engineering and programming skills.
+* Exploring robotics software, modeling, and simulation.
+* Understanding how different components of robotic systems work together.
+* Learning through experimentation, problem-solving, and continuous improvement.
 
-ros2-robot-projects/
-├── README.md
-├── LICENSE
-├── .gitignore
-│
-├── 01-first-robot/
-│   ├── README.md
-│   ├── my_robot.urdf
-│   └── images/
-│
-└── ...
+Open Source
 
-Development Approach
+I created this repository to document my progress and share my work with the robotics community.
 
-Projects in this repository follow an incremental development process:
-
-1. Define the robot’s structure and components.
-2. Create the robot description using URDF.
-3. Visualize and validate the model in RViz2.
-4. Integrate the model into Gazebo for simulation.
-5. Implement robot control and ROS 2 functionality.
-6. Explore mechanical design and physical implementation.
-
-Not every project includes all development stages.
-
-Project Goals
-
-The primary goals of this repository are to:
-
-* Develop practical knowledge of ROS 2 and its ecosystem.
-* Understand robot coordinate systems, links, and joints.
-* Gain experience with robot modeling and simulation.
-* Improve robotics programming and debugging skills.
-* Explore the integration of software and mechanical design.
-* Build a documented portfolio of robotics projects.
+My intention is to contribute to open-source learning by sharing projects of different sizes and levels of complexity as I continue to develop my skills.
 
 License
 
-This project is licensed under the MIT License.
+This repository is licensed under the MIT License.
