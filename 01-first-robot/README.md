@@ -1,4 +1,3 @@
-My first robot model using ROS 2 Jazzy and URDF.
 # First URDF Robot
 
 A simple two-wheeled robot model created while learning robot description and visualization with ROS 2 Jazzy.
