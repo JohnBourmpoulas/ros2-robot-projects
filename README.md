@@ -1,42 +1,43 @@
 ROS 2 Robot Projects
 
-Welcome to my open-source robotics repository.
+An open-source collection of robotics projects focused on robot modeling, simulation, control, and software development using ROS 2 and related technologies.
 
-This repository documents my journey into robotics engineering and robot software development through hands-on learning, experimentation, and practical implementation.
+The repository includes practical implementations, experiments, and examples covering different aspects of robotic systems.
 
-My goal is to gradually develop the knowledge and skills required to understand, design, program, and build robotic systems.
+Overview
 
-About
+The repository covers a range of robotics topics, including:
 
-I believe that one of the most effective ways to learn robotics is through practical experience.
+* Robot descriptions and modeling using URDF
+* Robot visualization and coordinate transformations
+* Robotics simulation and virtual environments
+* ROS 2 nodes, topics, services, and actions
+* Robot motion and control
+* Sensors and data processing
+* Robot navigation and autonomous systems
+* Integration of software and mechanical components
 
-This repository is a space where I can explore new concepts, experiment with different approaches, and apply what I learn to real projects.
+The collection will expand over time to include additional robotics concepts, tools, and implementations.
 
-The focus is on continuous improvement, starting with fundamental concepts and gradually working toward more advanced challenges.
+Not all topics listed above are implemented yet.
 
-Repository Organization
+Repository Structure
 
-The repository is organized into individual project directories.
+Each project is maintained in a separate directory and may include:
 
-Each directory contains its own documentation, source files, and any additional resources relevant to that project.
+* Source code and configuration files
+* Robot description files
+* Simulation resources
+* Images and visualization results
+* Documentation and execution instructions
 
-For technical details, implementation notes, and instructions, please refer to the README file inside each project directory.
+Each project directory contains its own README with information specific to that implementation.
 
-Learning and Development
+Technologies
 
-My learning approach focuses on:
+Projects in this repository use or may explore technologies such as ROS 2, URDF, RViz2, TF2, Gazebo, Python, C++, and other robotics development tools.
 
-* Building a strong understanding of robotics fundamentals.
-* Developing practical engineering and programming skills.
-* Exploring robotics software, modeling, and simulation.
-* Understanding how different components of robotic systems work together.
-* Learning through experimentation, problem-solving, and continuous improvement.
-
-Open Source
-
-I created this repository to document my progress and share my work with the robotics community.
-
-My intention is to contribute to open-source learning by sharing projects of different sizes and levels of complexity as I continue to develop my skills.
+Technology usage varies by project and is documented in the corresponding project directory.
 
 License
 
