@@ -1,86 +1,74 @@
-3-DOF Robotic Arm
+# 3-DOF Robotic Arm
 
-A simple 3-Degree-of-Freedom (3-DOF) robotic arm developed using URDF and visualized in RViz2 with ROS 2 Jazzy.
+A 3-degree-of-freedom robotic arm modeled in URDF and visualized using ROS 2 Jazzy and RViz2.
 
-The robot features a rotating base, a shoulder joint, and an elbow joint, allowing movement across three rotational axes.
+<p align="center">
+  <img src="./images/robotic_arm_rviz.png" alt="3-DOF Robotic Arm in RViz2" width="750">
+</p>
 
-This project demonstrates fundamental concepts of robot modeling, including links, joints, coordinate frames, and joint limits.
+<p align="center">
+  <em>3-DOF robotic arm visualization in RViz2</em>
+</p>
 
-⸻
+## Overview
 
-Robot Preview
+This project demonstrates the fundamentals of robot modeling using the Unified Robot Description Format (URDF).
 
-3-DOF robotic arm visualized in RViz2.
+The robotic arm consists of a fixed base, a rotating platform, two articulated arm segments, and an end-effector placeholder.
 
-⸻
+The model includes three revolute joints with defined motion limits, allowing interactive visualization and joint manipulation in RViz2.
 
-Features
+## Joint Configuration
 
-* 3 Degrees of Freedom (3-DOF)
-* Base rotation: −90° to +90° (180° total range)
-* Shoulder rotation: −90° to +90°
-* Elbow rotation: −135° to +135°
-* URDF model using basic geometric shapes
-* Revolute joints with defined rotation limits
-* Interactive joint control using Joint State Publisher GUI
-* Robot visualization in RViz2
+| Joint | Rotation Axis | Motion Range |
+|:------|:-------------:|:------------:|
+| Base | Z | −90° to +90° |
+| Shoulder | Y | −90° to +90° |
+| Elbow | Y | −135° to +135° |
 
-⸻
+## Technical Specifications
 
-Robot Structure
+| Parameter | Value |
+|:----------|:------|
+| Degrees of Freedom | 3 |
+| Robot Description | URDF |
+| ROS Distribution | ROS 2 Jazzy |
+| Visualization | RViz2 |
+| Upper Arm Length | 0.30 m |
+| Forearm Length | 0.25 m |
+| Joint Types | Revolute, Fixed |
 
-The robotic arm consists of the following components:
+## Requirements
 
-Component	Description
-base_footprint	Ground reference frame
-base_link	Fixed base
-rotating_base_link	Rotating platform
-upper_arm_link	Upper arm (30 cm)
-forearm_link	Forearm (25 cm)
-tool_link	End-effector placeholder
+- ROS 2 Jazzy
+- RViz2
+- `urdf_tutorial`
+- `joint_state_publisher_gui`
 
-Joint Configuration
+## Visualization
 
-Joint	Type	Axis	Range
-base_rotation_joint	Revolute	Z	−90° to +90°
-shoulder_joint	Revolute	Y	−90° to +90°
-elbow_joint	Revolute	Y	−135° to +135°
+Launch the robot model in RViz2:
 
-⸻
-
-Requirements
-
-* ROS 2 Jazzy
-* RViz2
-* urdf_tutorial
-* joint_state_publisher_gui
-
-⸻
-
-Running in RViz2
-
-Launch the robot model using:
-
+```bash
 ros2 launch urdf_tutorial display.launch.py model:=/path/to/my_robotic_arm.urdf
+```
 
-Replace /path/to/my_robotic_arm.urdf with the actual path to the URDF file.
+Replace `/path/to/my_robotic_arm.urdf` with the actual location of the URDF file.
 
-Use the Joint State Publisher GUI to control the three revolute joints interactively.
+The Joint State Publisher GUI provides interactive sliders for controlling the base, shoulder, and elbow joints within their defined limits.
 
-⸻
+## Project Structure
 
-Project Structure
-
+```text
 02-3dof-robotic-arm/
+├── images/
+│   └── robotic_arm_rviz.png
 ├── my_robotic_arm.urdf
-├── README.md
-└── images/
-    └── robotic_arm_rviz.png
+└── README.md
+```
 
-⸻
+## Current Scope
 
-Notes
+The project focuses on robot description, kinematic structure, and visualization.
 
-This project focuses on URDF modeling and robot visualization in RViz2.
-
-The current model does not include collision geometry, inertial properties, or simulation controllers for physics-based simulation in Gazebo.
+Physics-based simulation in Gazebo is not currently implemented. Collision geometry, inertial properties, and simulation controllers would be required for further development.
