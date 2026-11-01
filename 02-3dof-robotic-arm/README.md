@@ -7,6 +7,7 @@ The robot consists of a fixed base, a rotating platform, an upper arm, a forearm
 This project demonstrates the use of URDF links, joints, coordinate frames, and joint limits in ROS 2.
 
 Robot Preview
+![3-DOF Robotic Arm in RViz2](images/robotic_arm_rviz.png)
 
 Features
 
