@@ -1,4 +1,4 @@
-3-DOF Robotic Arm — ROS 2
+3-DOF Robotic Arm - ROS 2
 
 A simple 3-degree-of-freedom (3-DOF) robotic arm modeled using URDF (Unified Robot Description Format) and visualized in RViz2.
 
